@@ -1,14 +1,13 @@
-#polymorphism
-class methover:
-    def add(self,datatype,*args):
-        if(datatype=='int'):
-           answer=0
-        if(datatype=='str'):
-           answer=''
-        for x in args:
-           answer=answer + x
-        print(answer)
-a=methover()    
-a.add('int',5,15,25)
-a.add('str','computer','science')
-    
+class vechicles:
+    def move(self):
+        print("vechicles move")
+class car(vechicles):
+    def move(self):
+        print("car used to drive")
+class boat(vechicles):
+    def move(self):
+        print("boat sails in river")
+v1=car()
+v1.move()
+v2=boat()
+v2.move()
